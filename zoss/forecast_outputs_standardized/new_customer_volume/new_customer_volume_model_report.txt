@@ -1,0 +1,44 @@
+Target: New Customer Volume
+Final selected model: SES
+Slide notation: SES
+Training period: 2018 Jul - 2023 Dec
+Validation period: 2024 Jan - 2024 Dec
+Forecast period: 2025 Jan - 2025 Dec
+
+Models compared: Naive, SNaive, SES, ETS, Base ARIMA, TSLM, NNet
+
+Validation metrics summary:
+# A tibble: 7 × 8
+  Model        MAE  RMSE  MAPE  MASE RMSSE `Reason for inclusion`               
+  <chr>      <dbl> <dbl> <dbl> <dbl> <dbl> <chr>                                
+1 SES         109.  138   12.0  0.35  0.35 Simple exponential smoothing benchma…
+2 Base ARIMA  118.  141.  12.7  0.38  0.36 Automatic ARIMA benchmark from the o…
+3 Naive       116.  143.  13.0  0.37  0.36 Simple one-step benchmark using the …
+4 NNet        110.  144.  12.3  0.35  0.37 Neural-network autoregression includ…
+5 ETS         127.  153.  13.8  0.41  0.39 Exponential smoothing model selected…
+6 SNaive      155.  190.  17.3  0.49  0.48 Seasonal naive benchmark from the sa…
+7 TSLM        267.  307.  27.5  0.85  0.78 Trend and monthly seasonality regres…
+# ℹ 1 more variable: Selected_Final_Model <lgl>
+
+Why selected: The downloaded group script selects by the lowest 2024 roll-forward validation RMSE; this script makes that selection rule explicit.
+Business interpretation: Customer acquisition planning and marketing reach monitoring.
+
+Notes / caveats:
+- The downloaded New Customer script did not hard-code a final 2025 single-model choice; it printed the lowest validation-RMSE model.
+- This standardized version turns that rule into a clear final_model_name for reproducibility.
+- Validation metrics are based on 2024 roll-forward forecasts, not training fitted values.
+
+Final model report:
+Series: Value 
+Model: ETS(A,N,N) 
+  Smoothing parameters:
+    alpha = 0.7535188 
+
+  Initial states:
+     l[0]
+ 2063.495
+
+  sigma^2:  47095.09
+
+     AIC     AICc      BIC 
+1183.071 1183.396 1190.141 

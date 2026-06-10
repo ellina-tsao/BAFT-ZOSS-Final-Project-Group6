@@ -1,0 +1,7 @@
+"Model","RMSE","MAE","MAPE","AICc","Model_Summary_Info","Reason for inclusion","Selected_Final_Model"
+"ARIMA + Jan-Feb",0.0033,0.0023,13.71,-477.4,"AICc from model fit on 2018 Jul-2023 Dec","Final selected model; tests a broader January-February early-year lift.",TRUE
+"Base ARIMA",0.0037,0.0024,14.06,-474.05,"AICc from model fit on 2018 Jul-2023 Dec","Baseline ARIMA benchmark without external calendar predictors.",FALSE
+"SNaive",0.0039,0.0028,15.9,NA,"AICc from model fit on 2018 Jul-2023 Dec","Seasonal naive benchmark using the same month last year.",FALSE
+"ARIMA + CNY season",0.004,0.0028,17.28,-478.78,"AICc from model fit on 2018 Jul-2023 Dec","Tests Lunar New Year month plus the previous month as a business-timed retail season.",FALSE
+"ARIMA + Jan",0.0051,0.0032,18.52,-480.03,"AICc from model fit on 2018 Jul-2023 Dec","Tests whether the early-year lift is concentrated in January only.",FALSE
+"ARIMA + pre-CNY",0.0054,0.0036,21.3,-479.62,"AICc from model fit on 2018 Jul-2023 Dec","Tests the month before Lunar New Year as a business-timed retail lift.",FALSE

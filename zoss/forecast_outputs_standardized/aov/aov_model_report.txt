@@ -1,0 +1,41 @@
+Target: Average Order Value
+Final selected model: ARIMA
+Slide notation: ARIMA(1,0,1)(1,1,0)[12]
+Training period: 2018 Jul - 2023 Dec
+Validation period: 2024 Jan - 2024 Dec
+Forecast period: 2025 Jan - 2025 Dec
+
+Models compared: Naive, SNaive, SES, ETS, Base ARIMA, Selected ARIMA, TSLM, NNet
+
+Validation metrics summary:
+# A tibble: 8 × 8
+  Model        MAE  RMSE  MAPE  MASE RMSSE `Reason for inclusion`               
+  <chr>      <dbl> <dbl> <dbl> <dbl> <dbl> <chr>                                
+1 ARIMA       16.8  21.9  0.85  0.19  0.21 Original final AOV model: explicit s…
+2 Base ARIMA  18.7  24.8  0.95  0.22  0.24 Automatic ARIMA benchmark from the o…
+3 ETS         25.0  31.8  1.27  0.29  0.31 Exponential smoothing model selected…
+4 NNet        30.0  40.1  1.49  0.35  0.39 Neural-network autoregression includ…
+5 TSLM        39.6  44.2  1.99  0.46  0.43 Trend and monthly seasonality regres…
+6 SNaive      51.2  68.2  2.57  0.59  0.66 Seasonal naive benchmark from the sa…
+7 Naive       57.0  68.9  2.84  0.66  0.66 Simple one-step benchmark using the …
+8 SES         63.3  73.6  3.14  0.73  0.71 Simple exponential smoothing benchma…
+# ℹ 1 more variable: Selected_Final_Model <lgl>
+
+Why selected: The original AOV script selected the explicit seasonal ARIMA after comparing the 2024 validation plot and error matrix.
+Business interpretation: Customer spending baseline and revenue planning.
+
+Notes / caveats:
+- AOV uses the original tsclean() cleaned series from the group member script.
+- Validation metrics are based on 2024 roll-forward forecasts, not training fitted values.
+
+Final model report:
+Series: Value 
+Model: ARIMA(1,0,1)(1,1,0)[12] 
+
+Coefficients:
+         ar1      ma1     sar1
+      0.9421  -0.3171  -0.5215
+s.e.  0.0560   0.1357   0.1065
+
+sigma^2 estimated as 2369:  log likelihood=-350.99
+AIC=709.98   AICc=710.64   BIC=718.74

@@ -1,0 +1,2 @@
+"Target","Selected_Model","Model_Notation","Selection_Rule","Selection_Comment"
+"Retail Product Revenue Share","ARIMA_Early_Year","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy","Calendar-adjusted ARIMA improved 2024 validation accuracy","The calendar-adjusted ARIMA model was selected because it better captures the recurring early-year lift in retail product revenue share while improving validation accuracy."

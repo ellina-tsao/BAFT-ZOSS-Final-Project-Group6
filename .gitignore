@@ -1,0 +1,11 @@
+.DS_Store
+.RData
+.Rhistory
+.Rproj.user/
+
+# Raw transaction data is excluded from the public repository.
+zoss/zoss_data.csv
+
+# Local scratch outputs
+tmp/
+*.log

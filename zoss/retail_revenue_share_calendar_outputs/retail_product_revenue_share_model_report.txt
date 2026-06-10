@@ -1,0 +1,33 @@
+Retail Product Revenue Share Forecasting Report
+
+Training period: 2018 Jul - 2023 Dec
+Validation period: 2024 Jan - 2024 Dec
+Future forecast period: 2025 Jan - 2025 Dec
+Final selected model: ARIMA + Jan-Feb
+Final model notation: ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy
+
+Validation metrics are based on 2024 roll-forward one-step-ahead forecasts.
+
+Validation comparison table:
+# A tibble: 6 × 8
+  Model        RMSE    MAE  MAPE  AICc Model_Summary_Info `Reason for inclusion`
+  <chr>       <dbl>  <dbl> <dbl> <dbl> <chr>              <chr>                 
+1 ARIMA + J… 0.0033 0.0023  13.7 -477. AICc from model f… Final selected model;…
+2 Base ARIMA 0.0037 0.0024  14.1 -474. AICc from model f… Baseline ARIMA benchm…
+3 SNaive     0.0039 0.0028  15.9   NA  AICc from model f… Seasonal naive benchm…
+4 ARIMA + C… 0.004  0.0028  17.3 -479. AICc from model f… Tests Lunar New Year …
+5 ARIMA + J… 0.0051 0.0032  18.5 -480. AICc from model f… Tests whether the ear…
+6 ARIMA + p… 0.0054 0.0036  21.3 -480. AICc from model f… Tests the month befor…
+# ℹ 1 more variable: Selected_Final_Model <lgl>
+
+Final model report:
+Series: retail_product_revenue_share 
+Model: LM w/ ARIMA(1,0,0) errors 
+
+Coefficients:
+         ar1  jan_feb_dummy  intercept
+      0.4837         0.0056     0.0162
+s.e.  0.0984         0.0020     0.0013
+
+sigma^2 estimated as 3.409e-05:  log likelihood=291.9
+AIC=-575.79   AICc=-575.24   BIC=-566.37

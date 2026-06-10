@@ -1,0 +1,13 @@
+"Month","Month_Date","Target","Selected_Model","Forecast","Lower_80","Upper_80","Lower_95","Upper_95"
+2025 Jan,2025-01-01,"Returning Customer Volume","ARIMA",4928,4206,5650,3823,6032
+2025 Feb,2025-02-01,"Returning Customer Volume","ARIMA",4537,3649,5424,3179,5894
+2025 Mar,2025-03-01,"Returning Customer Volume","ARIMA",4502,3559,5444,3060,5943
+2025 Apr,2025-04-01,"Returning Customer Volume","ARIMA",4563,3568,5557,3041,6084
+2025 May,2025-05-01,"Returning Customer Volume","ARIMA",4707,3663,5752,3110,6305
+2025 Jun,2025-06-01,"Returning Customer Volume","ARIMA",4758,3666,5849,3088,6427
+2025 Jul,2025-07-01,"Returning Customer Volume","ARIMA",4497,3360,5634,2758,6236
+2025 Aug,2025-08-01,"Returning Customer Volume","ARIMA",4653,3472,5833,2847,6458
+2025 Sep,2025-09-01,"Returning Customer Volume","ARIMA",4599,3376,5822,2729,6469
+2025 Oct,2025-10-01,"Returning Customer Volume","ARIMA",4521,3257,5784,2588,6453
+2025 Nov,2025-11-01,"Returning Customer Volume","ARIMA",4570,3267,5873,2577,6563
+2025 Dec,2025-12-01,"Returning Customer Volume","ARIMA",4668,3327,6010,2617,6720

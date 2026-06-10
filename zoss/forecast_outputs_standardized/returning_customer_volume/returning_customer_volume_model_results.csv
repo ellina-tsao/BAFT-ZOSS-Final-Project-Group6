@@ -1,0 +1,7 @@
+"Model","MAE","RMSE","MAPE","MASE","RMSSE","Reason for inclusion","Selected_Final_Model"
+"ARIMA",267.85,339.84,6.05,0.36,0.35,"Automatic ARIMA model selected as the original returning customer final model.",TRUE
+"ETS",330.88,398.76,7.14,0.44,0.41,"Exponential smoothing model selected automatically by ETS.",FALSE
+"SNaive",346.92,411.21,7.8,0.47,0.42,"Seasonal naive benchmark using the same month last year.",FALSE
+"SES",368.03,486.64,8.32,0.49,0.5,"Simple exponential smoothing benchmark without trend or seasonality.",FALSE
+"Naive",400.08,530.74,9.25,0.54,0.54,"Simple one-step benchmark using the most recent observation.",FALSE
+"TSLM",690.12,758.97,15.72,0.93,0.77,"Trend and monthly seasonality regression benchmark.",FALSE

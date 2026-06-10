@@ -1,0 +1,13 @@
+"Month","Month_Date","Target","Selected_Model","Forecast","Lower_80","Upper_80","Lower_95","Upper_95"
+2025 Jan,2025-01-01,"New Customer Volume","SES",1136,858,1414,711,1561
+2025 Feb,2025-02-01,"New Customer Volume","SES",1136,788,1484,603,1669
+2025 Mar,2025-03-01,"New Customer Volume","SES",1136,730,1542,514,1758
+2025 Apr,2025-04-01,"New Customer Volume","SES",1136,679,1593,437,1835
+2025 May,2025-05-01,"New Customer Volume","SES",1136,633,1639,367,1905
+2025 Jun,2025-06-01,"New Customer Volume","SES",1136,591,1681,303,1969
+2025 Jul,2025-07-01,"New Customer Volume","SES",1136,552,1720,243,2029
+2025 Aug,2025-08-01,"New Customer Volume","SES",1136,516,1756,187,2085
+2025 Sep,2025-09-01,"New Customer Volume","SES",1136,481,1791,135,2137
+2025 Oct,2025-10-01,"New Customer Volume","SES",1136,449,1823,85,2187
+2025 Nov,2025-11-01,"New Customer Volume","SES",1136,417,1855,37,2235
+2025 Dec,2025-12-01,"New Customer Volume","SES",1136,387,1885,0,2281

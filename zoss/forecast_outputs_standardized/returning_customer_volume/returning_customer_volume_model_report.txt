@@ -1,0 +1,39 @@
+Target: Returning Customer Volume
+Final selected model: ARIMA
+Slide notation: ARIMA(auto)
+Training period: 2018 Jul - 2023 Dec
+Validation period: 2024 Jan - 2024 Dec
+Forecast period: 2025 Jan - 2025 Dec
+
+Models compared: Naive, SNaive, SES, ETS, ARIMA, TSLM
+
+Validation metrics summary:
+# A tibble: 6 × 8
+  Model    MAE  RMSE  MAPE  MASE RMSSE `Reason for inclusion`        Selected_Final_Model
+  <chr>  <dbl> <dbl> <dbl> <dbl> <dbl> <chr>                         <lgl>               
+1 ARIMA   268.  340.  6.05  0.36  0.35 Automatic ARIMA model select… TRUE                
+2 ETS     331.  399.  7.14  0.44  0.41 Exponential smoothing model … FALSE               
+3 SNaive  347.  411.  7.8   0.47  0.42 Seasonal naive benchmark usi… FALSE               
+4 SES     368.  487.  8.32  0.49  0.5  Simple exponential smoothing… FALSE               
+5 Naive   400.  531.  9.25  0.54  0.54 Simple one-step benchmark us… FALSE               
+6 TSLM    690.  759. 15.7   0.93  0.77 Trend and monthly seasonalit… FALSE               
+
+Why selected: The existing customer volume diagnostics script selects the lowest 2024 roll-forward validation RMSE model; for Returning Customer Volume this selects ARIMA.
+Business interpretation: Retention planning and loyal customer traffic monitoring.
+
+Notes / caveats:
+- Returning customer volume is counted from distinct transaction IDs where New.Customer..Yes.No. is '否'.
+- Validation metrics are based on 2024 roll-forward forecasts, not training fitted values.
+- The final model is selected by the same lowest-RMSE rule used in the existing customer volume diagnostics script.
+
+Final model report:
+Series: Value 
+Model: ARIMA(0,1,2)(0,0,2)[12] 
+
+Coefficients:
+          ma1      ma2    sma1    sma2
+      -0.2856  -0.2741  0.2858  0.2312
+s.e.   0.1191   0.1314  0.1157  0.1175
+
+sigma^2 estimated as 317471:  log likelihood=-596.08
+AIC=1202.16   AICc=1203   BIC=1213.88

@@ -1,0 +1,13 @@
+"Month","Month_Date","Target","Selected_Model","Model_Notation","Forecast","Lower_80","Upper_80","Lower_95","Upper_95"
+2025 Jan,2025-01-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0209,0.0134,0.0284,0.0094,0.0323
+2025 Feb,2025-02-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0213,0.013,0.0296,0.0086,0.034
+2025 Mar,2025-03-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.016,0.0075,0.0245,0.003,0.029
+2025 Apr,2025-04-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0161,0.0076,0.0246,0.003,0.0292
+2025 May,2025-05-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0161,0.0076,0.0247,0.0031,0.0292
+2025 Jun,2025-06-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0162,0.0076,0.0247,0.0031,0.0292
+2025 Jul,2025-07-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0162,0.0076,0.0247,0.0031,0.0293
+2025 Aug,2025-08-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0162,0.0076,0.0247,0.0031,0.0293
+2025 Sep,2025-09-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0162,0.0076,0.0247,0.0031,0.0293
+2025 Oct,2025-10-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0162,0.0076,0.0247,0.0031,0.0293
+2025 Nov,2025-11-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0162,0.0076,0.0247,0.0031,0.0293
+2025 Dec,2025-12-01,"Retail Product Revenue Share","ARIMA + Jan-Feb","ARIMA(1,0,0)(0,0,0)[12] with Jan-Feb dummy",0.0162,0.0076,0.0247,0.0031,0.0293
